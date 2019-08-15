@@ -11,4 +11,4 @@ EXPOSE 8000
 
 ENTRYPOINT ["R", "-e", \
     "pr <- plumber::plumb('/data/bos_rf_score.R'); \
-    pr$run(host='0.0.0.0', port=8000)"]
+    pr$run(host='0.0.0.0', port=8000, swagger=TRUE)"]
